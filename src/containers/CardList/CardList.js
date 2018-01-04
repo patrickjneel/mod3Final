@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import apiCalls from '../../apiCalls/ApiCalls';
 import { addHouses } from '../../actions';
+import Card from '../../components/Card/Card';
 
 class CardList extends Component {
 
@@ -11,9 +12,20 @@ class CardList extends Component {
   }
 
   render() {
+    let mappedData = this.props.data.map(houseData => {
+      return <Card 
+              name={houseData.name}
+              founded={houseData.founded}
+              seats={houseData.seats}
+              coatOfArms={houseData.coatOfArms}
+              weapons={houseData.ancestralWeapons}
+              words={houseData.words}
+            />        
+    })
+
     return (
       <div className="card-list">
-      Cards Go Here
+        {mappedData}
       </div>
     )
   }
