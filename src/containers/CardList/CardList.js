@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import apiCalls from '../../apiCalls/ApiCalls'
 
 class CardList extends Component {
 
-  componentDidMount() {
-
+  async componentDidMount() {
+    const data = await apiCalls.fetchHouses()
+    console.log(data)
   }
 
   render() {
