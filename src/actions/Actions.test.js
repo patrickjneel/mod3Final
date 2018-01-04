@@ -2,7 +2,7 @@ import * as actions from './index.js';
 
 describe('Actions Test', () => {
 
-  it.only('has a type of addHouses', () => {
+  it('has a type of addHouses', () => {
     const data = {
       name: 'Stark',
       words: 'Winter is Coming',
@@ -13,5 +13,5 @@ describe('Actions Test', () => {
       data
     };
     expect(actions.addHouses(data)).toEqual(expected);
-  })
-})
+  });
+});
