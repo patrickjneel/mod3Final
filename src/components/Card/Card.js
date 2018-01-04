@@ -4,11 +4,6 @@ import './card.css';
 const Card = (props) => {
   const { name, founded, seats, titles, coatOfArms, weapons, words, swornMembers, swornData } = props;
 
-// let swornNames;
-//   if(this.props.sworn.length) {
-//     return <p>{this.props.sworn}</p>
-//   }
-
   let swornNames;
   if (props.sworn.length) {
       swornNames = props.sworn.map(name => {
