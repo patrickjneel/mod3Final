@@ -4,6 +4,7 @@ import apiCalls from '../../apiCalls/ApiCalls';
 import { addHouses } from '../../actions';
 import Card from '../../components/Card/Card';
 import './card-list.css'
+import PropTypes from 'prop-types';
 
 export class CardList extends Component {
   constructor() {
@@ -70,3 +71,7 @@ export const mapDispatchToProps = (dispatch) => {
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(CardList);
+
+CardList.propTypes = {
+  addHouses: PropTypes.func
+}
