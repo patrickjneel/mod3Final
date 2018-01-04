@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
-import PropTypes, { shape, func, string } from 'prop-types';
 import logo from './logo.svg';
 import './App.css';
-import CardList from '../../containers/CardList/CardList'
+import CardList from '../../containers/CardList/CardList';
 class App extends Component {
 
   render() {
@@ -20,8 +19,4 @@ class App extends Component {
   }
 }
 
-export default App;
-          <button onClick={() => {
-            this.props.fakeAction();
-            alert(this.props.fake);
-          }}> FAKE ACTION</button>
+export default App;         

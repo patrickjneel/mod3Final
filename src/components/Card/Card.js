@@ -3,14 +3,24 @@ import './card.css';
 import PropTypes from 'prop-types';
 
 const Card = (props) => {
-  const { name, founded, seats, titles, coatOfArms, weapons, words, swornMembers, swornData } = props;
+  const { 
+    name, 
+    founded, 
+    seats, 
+    titles, 
+    coatOfArms, 
+    weapons, 
+    words, 
+    swornMembers, 
+    swornData 
+  } = props;
 
   let swornNames;
   if (props.sworn.length) {
-      swornNames = props.sworn.map(name => {
-        return <div>{name}</div>;
-      });
-    } 
+    swornNames = props.sworn.map(name => {
+      return <div key={name}>{name}</div>;
+    });
+  } 
 
   
   return (
@@ -37,5 +47,8 @@ Card.propTypes = {
   coatOfArms: PropTypes.string,
   weapons: PropTypes.string,
   words: PropTypes.string,
-  swornNames: PropTypes.string
-}
+  swornNames: PropTypes.string,
+  swornMembers: PropTypes.string,
+  swornData: PropTypes.array,
+  sowrn: PropTypes.string
+};
