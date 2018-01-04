@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import apiCalls from '../../apiCalls/ApiCalls'
+import apiCalls from '../../apiCalls/ApiCalls';
+import { addHouses } from '../../actions';
 
 class CardList extends Component {
 
   async componentDidMount() {
     const data = await apiCalls.fetchHouses()
-    console.log(data)
+    this.props.addHouses(data)
   }
 
   render() {
@@ -18,4 +19,18 @@ class CardList extends Component {
   }
 }
 
-export default CardList;
+export const mapStateToProps = (state) => {
+  return {
+    data: state.data
+  }
+}
+
+export const mapDispatchToProps = (dispatch) => {
+  return {
+    addHouses: (data) => {
+      dispatch(addHouses(data))
+    }
+  }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(CardList);
