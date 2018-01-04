@@ -17,7 +17,6 @@ describe('Card Test', () => {
               swornData={mockFunc}
               sworn={[]}
             />);
-    console.log(renderedCard)
     expect(renderedCard).toBeDefined();
   });
 
@@ -38,9 +37,7 @@ describe('Card Test', () => {
     expect(renderedCard).toMatchSnapshot();
   });
 
-  it.skip('should receive props', () => {
-    const renderCard = shallow(<Card />);
-    expect()
-  })
 });
+
+
  
