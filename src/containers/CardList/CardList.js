@@ -21,11 +21,15 @@ export class CardList extends Component {
 
   async swornData(url) {
    const memberData = await apiCalls.fetchMembers(url);
-   this.setState({ sworn: memberData })
+   let members = memberData.map(name => {
+    return name.name
+   })
+   this.setState({ sworn: members })
   }
 
-  
+
   render() {
+    console.log(this.state)
     if(this.props.data.length === 0) {
       return <img src={require('./wolf.gif')}/>
     } else {
