@@ -21,15 +21,19 @@ export class CardList extends Component {
 
   async swornData(url) {
    const memberData = await apiCalls.fetchMembers(url);
-   this.setState({ members: memberData })
+   let members = memberData.map(name => {
+    return name.name
+   })
+   this.setState({ sworn: members })
   }
 
+
   render() {
+    console.log(this.state)
     if(this.props.data.length === 0) {
       return <img src={require('./wolf.gif')}/>
     } else {
     let mappedData = this.props.data.map(houseData => {
-      console.log(houseData)
       return <Card 
               name={houseData.name}
               founded={houseData.founded}
@@ -37,8 +41,9 @@ export class CardList extends Component {
               coatOfArms={houseData.coatOfArms}
               weapons={houseData.ancestralWeapons}
               words={houseData.words}
-              swornmembers={houseData.swornMembers}
+              swornMembers={houseData.swornMembers}
               swornData={this.swornData}
+              sworn={this.state.sworn}
             />        
     })
 
