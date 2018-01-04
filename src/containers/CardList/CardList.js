@@ -43,6 +43,7 @@ export class CardList extends Component {
               words={houseData.words}
               swornMembers={houseData.swornMembers}
               swornData={this.swornData}
+              sworn={this.state.sworn}
             />        
     })
 

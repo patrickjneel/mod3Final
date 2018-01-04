@@ -4,8 +4,8 @@ const fetchHouses = async () => {
 
 }
 
-const fetchMembers = async (members) => {
- const allMembers = members.map(async (url) => {
+const fetchMembers = async (swornMembers) => {
+ const allMembers = swornMembers.map(async (url) => {
    const fetchData = await fetch('http://localhost:3001/api/v1/character', {
      method: 'POST',
      headers: {

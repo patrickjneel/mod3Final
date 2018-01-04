@@ -4,11 +4,19 @@ import './card.css';
 const Card = (props) => {
   const { name, founded, seats, titles, coatOfArms, weapons, words, swornMembers, swornData } = props;
 
-  let swornNames; 
-       swornNames = swornMembers.map(name => {
-        // console.log(name)
-    })
+// let swornNames;
+//   if(this.props.sworn.length) {
+//     return <p>{this.props.sworn}</p>
+//   }
 
+  let swornNames;
+  if (props.sworn.length) {
+      swornNames = props.sworn.map(name => {
+        return <div>{name}</div>;
+      });
+    } 
+
+  
   return (
     <div className="card" onClick={() => swornData(swornMembers)}>
       <h3>{name}</h3>
