@@ -24,6 +24,7 @@ export class CardList extends Component {
    this.setState({ sworn: memberData })
   }
 
+  
   render() {
     if(this.props.data.length === 0) {
       return <img src={require('./wolf.gif')}/>
@@ -36,7 +37,7 @@ export class CardList extends Component {
               coatOfArms={houseData.coatOfArms}
               weapons={houseData.ancestralWeapons}
               words={houseData.words}
-              swornmembers={houseData.swornMembers}
+              swornMembers={houseData.swornMembers}
               swornData={this.swornData}
             />        
     })

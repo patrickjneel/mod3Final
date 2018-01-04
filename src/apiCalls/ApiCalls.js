@@ -11,7 +11,7 @@ const fetchMembers = async (members) => {
      headers: {
        'Content-Type': 'application/json'
      },
-     body: JSON.stringify({ url: '...url' })
+     body: JSON.stringify({ url: url })
    })
    const fetchStuff = fetchData.json()
    return fetchStuff

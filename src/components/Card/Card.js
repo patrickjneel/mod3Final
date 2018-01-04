@@ -3,6 +3,15 @@ import './card.css';
 
 const Card = (props) => {
   const { name, founded, seats, titles, coatOfArms, weapons, words, swornMembers, swornData } = props;
+
+  console.log(swornMembers)
+
+  let swornNames; 
+    if(swornMembers.length) {
+      swornMembers.map(name => {
+      console.log(name)
+    })
+  }
   return (
     <div className="card" onClick={() => swornData(swornMembers)}>
       <h3>{name}</h3>
