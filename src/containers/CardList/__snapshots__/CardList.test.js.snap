@@ -19,11 +19,11 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "children": "loading...",
+      "src": "wolf.gif",
     },
     "ref": null,
-    "rendered": "loading...",
-    "type": "div",
+    "rendered": null,
+    "type": "img",
   },
   Symbol(enzyme.__nodes__): Array [
     Object {
@@ -31,11 +31,11 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "children": "loading...",
+        "src": "wolf.gif",
       },
       "ref": null,
-      "rendered": "loading...",
-      "type": "div",
+      "rendered": null,
+      "type": "img",
     },
   ],
   Symbol(enzyme.__options__): Object {
