@@ -4,7 +4,17 @@ exports[`Card Test should match snapShot 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <Card />,
+  Symbol(enzyme.__unrendered__): <Card
+    coatOfArms=""
+    founded=""
+    name="strak"
+    seats={124}
+    sworn={Array []}
+    swornData={[Function]}
+    swornMembers={Array []}
+    weapons="ice"
+    words="winter coming"
+/>,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],
@@ -18,13 +28,22 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <h3 />,
+        <h3>
+          strak
+</h3>,
+        <h4 />,
+        <h4>
+          124
+</h4>,
         <h4 />,
         <h4 />,
-        <h4 />,
-        <h4 />,
-        <h4 />,
-        <h4 />,
+        <h4>
+          ice
+</h4>,
+        <h4>
+          winter coming
+</h4>,
+        <h5 />,
       ],
       "className": "card",
       "onClick": [Function],
@@ -36,10 +55,10 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": undefined,
+          "children": "strak",
         },
         "ref": null,
-        "rendered": null,
+        "rendered": "strak",
         "type": "h3",
       },
       Object {
@@ -47,10 +66,21 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": undefined,
+          "children": "",
         },
         "ref": null,
-        "rendered": null,
+        "rendered": "",
+        "type": "h4",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": 124,
+        },
+        "ref": null,
+        "rendered": 124,
         "type": "h4",
       },
       Object {
@@ -69,10 +99,32 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": undefined,
+          "children": "",
         },
         "ref": null,
-        "rendered": null,
+        "rendered": "",
+        "type": "h4",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "ice",
+        },
+        "ref": null,
+        "rendered": "ice",
+        "type": "h4",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "winter coming",
+        },
+        "ref": null,
+        "rendered": "winter coming",
         "type": "h4",
       },
       Object {
@@ -84,29 +136,7 @@ ShallowWrapper {
         },
         "ref": null,
         "rendered": null,
-        "type": "h4",
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": undefined,
-        },
-        "ref": null,
-        "rendered": null,
-        "type": "h4",
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": undefined,
-        },
-        "ref": null,
-        "rendered": null,
-        "type": "h4",
+        "type": "h5",
       },
     ],
     "type": "div",
@@ -118,13 +148,22 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <h3 />,
+          <h3>
+            strak
+</h3>,
+          <h4 />,
+          <h4>
+            124
+</h4>,
           <h4 />,
           <h4 />,
-          <h4 />,
-          <h4 />,
-          <h4 />,
-          <h4 />,
+          <h4>
+            ice
+</h4>,
+          <h4>
+            winter coming
+</h4>,
+          <h5 />,
         ],
         "className": "card",
         "onClick": [Function],
@@ -136,10 +175,10 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": undefined,
+            "children": "strak",
           },
           "ref": null,
-          "rendered": null,
+          "rendered": "strak",
           "type": "h3",
         },
         Object {
@@ -147,10 +186,21 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": undefined,
+            "children": "",
           },
           "ref": null,
-          "rendered": null,
+          "rendered": "",
+          "type": "h4",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": 124,
+          },
+          "ref": null,
+          "rendered": 124,
           "type": "h4",
         },
         Object {
@@ -169,10 +219,32 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": undefined,
+            "children": "",
           },
           "ref": null,
-          "rendered": null,
+          "rendered": "",
+          "type": "h4",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "ice",
+          },
+          "ref": null,
+          "rendered": "ice",
+          "type": "h4",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "winter coming",
+          },
+          "ref": null,
+          "rendered": "winter coming",
           "type": "h4",
         },
         Object {
@@ -184,29 +256,7 @@ ShallowWrapper {
           },
           "ref": null,
           "rendered": null,
-          "type": "h4",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": undefined,
-          },
-          "ref": null,
-          "rendered": null,
-          "type": "h4",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": undefined,
-          },
-          "ref": null,
-          "rendered": null,
-          "type": "h4",
+          "type": "h5",
         },
       ],
       "type": "div",

@@ -4,12 +4,37 @@ import Card from './Card';
 
 describe('Card Test', () => {
   it('should be defined', () => {
-    const renderedCard = shallow(<Card />);
+    const mockFunc = jest.fn()
+    const renderedCard = shallow(
+          <Card 
+              name={'strak'}
+              founded={''}
+              seats={124}
+              coatOfArms={''}
+              weapons={'ice'}
+              words={'winter coming'}
+              swornMembers={[]}
+              swornData={mockFunc}
+              sworn={[]}
+            />);
+    console.log(renderedCard)
     expect(renderedCard).toBeDefined();
   });
 
   it('should match snapShot', () => {
-    const renderedCard = shallow(<Card />);
+    const mockFunc = jest.fn()
+    const renderedCard = shallow(
+           <Card 
+              name={'strak'}
+              founded={''}
+              seats={124}
+              coatOfArms={''}
+              weapons={'ice'}
+              words={'winter coming'}
+              swornMembers={[]}
+              swornData={mockFunc}
+              sworn={[]}
+            />);
     expect(renderedCard).toMatchSnapshot();
   });
 
@@ -18,3 +43,4 @@ describe('Card Test', () => {
     expect()
   })
 });
+ 
