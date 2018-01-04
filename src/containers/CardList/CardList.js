@@ -6,10 +6,21 @@ import Card from '../../components/Card/Card';
 import './card-list.css'
 
 export class CardList extends Component {
+  constructor() {
+    super()
+    this.state = {
+
+    }
+    this.swornData = this.swornData.bind(this);
+  }
 
   async componentDidMount() {
     const data = await apiCalls.fetchHouses()
     this.props.addHouses(data)
+  }
+
+  swornData() {
+   console.log('people')
   }
 
   render() {
@@ -24,6 +35,7 @@ export class CardList extends Component {
               coatOfArms={houseData.coatOfArms}
               weapons={houseData.ancestralWeapons}
               words={houseData.words}
+              swornData={this.swornData}
             />        
     })
 
