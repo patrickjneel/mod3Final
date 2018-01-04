@@ -9,7 +9,7 @@ describe('Card Test', () => {
           <Card 
               name={'strak'}
               founded={''}
-              seats={124}
+              seats={'big ones'}
               coatOfArms={''}
               weapons={'ice'}
               words={'winter coming'}
@@ -26,7 +26,7 @@ describe('Card Test', () => {
            <Card 
               name={'strak'}
               founded={''}
-              seats={124}
+              seats={'big ones'}
               coatOfArms={''}
               weapons={'ice'}
               words={'winter coming'}
