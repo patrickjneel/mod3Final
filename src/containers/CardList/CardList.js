@@ -13,6 +13,7 @@ export class CardList extends Component {
   }
 
   render() {
+    console.log(CardList)
     if(this.props.data.length === 0) {
       return <div>loading...</div>
     } else {

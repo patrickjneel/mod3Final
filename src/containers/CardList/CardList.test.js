@@ -4,15 +4,17 @@ import { CardList, mapStateToProps, mapDispatchToProps} from './CardList';
 
 describe('CardList Test', () => {
   
-  it.only('should be defined', () => {
-    const renderedCardList = shallow(<CardList />)
+  it('should be defined', () => {
+    const mockFunc = jest.fn();
+    const data = {name: 'stark', words: 'winter is coming'}
+    const renderedCardList = shallow(<CardList data={mockFunc} />, {disableLifecycleMethods: true})
     console.log(renderedCardList)
     expect(renderedCardList).toBeDefined();
   })
 
   it('should match snap shot', () => {
     const mockFunc = jest.fn();
-    const renderedCardList = shallow(<CardList />, {disableLifecycleMethods: true});
+    const renderedCardList = shallow(<CardList data={mockFunc}/>, {disableLifecycleMethods: true});
     expect(renderedCardList).toMatchSnapshot();
   });
 
