@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import PropTypes, { shape, func, string } from 'prop-types';
 import logo from './logo.svg';
 import './App.css';
-import { fakeAction } from '../../actions';
+// import { fakeAction } from '../../actions';
 import CardList from '../../containers/CardList/CardList'
 class App extends Component {
 
