@@ -14,7 +14,7 @@ export class CardList extends Component {
 
   render() {
     if(this.props.data.length === 0) {
-      return <div>loading...</div>
+      return <img src={require('./wolf.gif')}/>
     } else {
     let mappedData = this.props.data.map(houseData => {
       return <Card 
