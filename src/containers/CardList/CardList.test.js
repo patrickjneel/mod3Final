@@ -3,14 +3,16 @@ import { shallow } from 'enzyme';
 import { CardList, mapStateToProps, mapDispatchToProps} from './CardList';
 
 describe('CardList Test', () => {
-
-  it('should be defined', () => {
-    const renderedCardList = shallow(<CardList />);
+  
+  it.only('should be defined', () => {
+    const renderedCardList = shallow(<CardList />)
+    console.log(renderedCardList)
     expect(renderedCardList).toBeDefined();
   })
 
   it('should match snap shot', () => {
-    const renderedCardList = shallow(<CardList />);
+    const mockFunc = jest.fn();
+    const renderedCardList = shallow(<CardList />, {disableLifecycleMethods: true});
     expect(renderedCardList).toMatchSnapshot();
   });
 
