@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import PropTypes, { shape, func, string } from 'prop-types';
 import logo from './logo.svg';
 import './App.css';
-import { connect } from 'react-redux';
 import { fakeAction } from '../../actions';
+import CardList from '../../containers/CardList/CardList'
 class App extends Component {
 
   render() {
@@ -18,6 +18,7 @@ class App extends Component {
           }}> FAKE ACTION</button>
         </div>
         <div className='Display-info'>
+          <CardList />
         </div>
       </div>
     );
@@ -26,8 +27,8 @@ class App extends Component {
 
 
 
-const mapStateToProps = ({ fake }) => ({ fake });
-const mapDispatchToProps = dispatch => ({ fakeAction:
-  () => dispatch(fakeAction())
-});
-export default connect(mapStateToProps, mapDispatchToProps)(App);
+// const mapStateToProps = ({ fake }) => ({ fake });
+// const mapDispatchToProps = dispatch => ({ fakeAction:
+//   () => dispatch(fakeAction())
+// });
+export default App;
