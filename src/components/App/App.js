@@ -12,10 +12,6 @@ class App extends Component {
         <div className='App-header'>
           <img src={logo} className='App-logo' alt='logo' />
           <h2>Welcome to Westeros</h2>
-          <button onClick={() => {
-            this.props.fakeAction();
-            alert(this.props.fake);
-          }}> FAKE ACTION</button>
         </div>
         <div className='Display-info'>
           <CardList />
@@ -25,10 +21,8 @@ class App extends Component {
   }
 }
 
-
-
-// const mapStateToProps = ({ fake }) => ({ fake });
-// const mapDispatchToProps = dispatch => ({ fakeAction:
-//   () => dispatch(fakeAction())
-// });
 export default App;
+          <button onClick={() => {
+            this.props.fakeAction();
+            alert(this.props.fake);
+          }}> FAKE ACTION</button>
