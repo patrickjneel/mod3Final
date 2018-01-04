@@ -1,5 +1,6 @@
 import React from 'react';
 import './card.css';
+import PropTypes from 'prop-types';
 
 const Card = (props) => {
   const { name, founded, seats, titles, coatOfArms, weapons, words, swornMembers, swornData } = props;
@@ -27,3 +28,14 @@ const Card = (props) => {
 };
 
 export default Card;
+
+Card.propTypes = {
+  name: PropTypes.string,
+  founded: PropTypes.string,
+  seats: PropTypes.string,
+  titles: PropTypes.string,
+  coatOfArms: PropTypes.string,
+  weapons: PropTypes.string,
+  words: PropTypes.string,
+  swornNames: PropTypes.string
+}

@@ -8,7 +8,7 @@ ShallowWrapper {
     coatOfArms=""
     founded=""
     name="strak"
-    seats={124}
+    seats="big ones"
     sworn={Array []}
     swornData={[Function]}
     swornMembers={Array []}
@@ -33,7 +33,7 @@ ShallowWrapper {
 </h3>,
         <h4 />,
         <h4>
-          124
+          big ones
 </h4>,
         <h4 />,
         <h4 />,
@@ -77,10 +77,10 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": 124,
+          "children": "big ones",
         },
         "ref": null,
-        "rendered": 124,
+        "rendered": "big ones",
         "type": "h4",
       },
       Object {
@@ -153,7 +153,7 @@ ShallowWrapper {
 </h3>,
           <h4 />,
           <h4>
-            124
+            big ones
 </h4>,
           <h4 />,
           <h4 />,
@@ -197,10 +197,10 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": 124,
+            "children": "big ones",
           },
           "ref": null,
-          "rendered": 124,
+          "rendered": "big ones",
           "type": "h4",
         },
         Object {
