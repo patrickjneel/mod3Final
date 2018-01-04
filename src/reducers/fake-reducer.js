@@ -1,7 +1,7 @@
 export const addHousesReducer = (state= [], action) => {
   switch (action.type) {
     case 'ADD_HOUSES':
-    return [...state, ...action.data] //not sure if need to spread the action ??
+    return [...state, ...action.data]
   default:
     return state;
   }

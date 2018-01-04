@@ -8,7 +8,6 @@ describe('CardList Test', () => {
     const mockFunc = jest.fn();
     const data = {name: 'stark', words: 'winter is coming'}
     const renderedCardList = shallow(<CardList data={mockFunc} />, {disableLifecycleMethods: true})
-    console.log(renderedCardList)
     expect(renderedCardList).toBeDefined();
   })
 
