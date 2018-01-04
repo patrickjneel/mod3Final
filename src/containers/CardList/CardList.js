@@ -3,8 +3,9 @@ import { connect } from 'react-redux';
 import apiCalls from '../../apiCalls/ApiCalls';
 import { addHouses } from '../../actions';
 import Card from '../../components/Card/Card';
+import './card-list.css'
 
-class CardList extends Component {
+export class CardList extends Component {
 
   async componentDidMount() {
     const data = await apiCalls.fetchHouses()
@@ -12,6 +13,9 @@ class CardList extends Component {
   }
 
   render() {
+    if(this.props.data.length === 0) {
+      return <div>loading...</div>
+    } else {
     let mappedData = this.props.data.map(houseData => {
       return <Card 
               name={houseData.name}
@@ -24,10 +28,11 @@ class CardList extends Component {
     })
 
     return (
-      <div className="card-list">
-        {mappedData}
-      </div>
-    )
+        <div className="card-list">
+          {mappedData}
+        </div>
+      )
+    }
   }
 }
 
