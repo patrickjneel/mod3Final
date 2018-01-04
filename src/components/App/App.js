@@ -24,10 +24,7 @@ class App extends Component {
   }
 }
 
-App.propTypes = {
-  fake: shape({ fake: string }),
-  fakeAction: func.isRequired
-};
+
 
 const mapStateToProps = ({ fake }) => ({ fake });
 const mapDispatchToProps = dispatch => ({ fakeAction:
